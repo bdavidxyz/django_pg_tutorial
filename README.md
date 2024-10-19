@@ -1,4 +1,4 @@
-# Libratop, demo of the simplest possible Django app with Linux and PostGre
+# Simplest possible local Django app PostGre
 
 In this tutorial, "libratop" is the commercial name of the product we want to build. It is an online library, so it will manage books.
 
