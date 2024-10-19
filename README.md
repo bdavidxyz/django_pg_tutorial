@@ -38,15 +38,13 @@ The following apt package may be required :
 sudo apt install python3-venv python3-dev libpq-dev postgresql postgresql-contrib
 ```
 
-## Steps
-
-### Create a new folder
+## Create a new folder
 
 ```shell
 mkdir libratop && cd libratop
 ```
 
-### Add .gitignore and start git
+## Add .gitignore and start git
 
 Add the following .gitignore
 
@@ -62,7 +60,7 @@ And if `git status` returns an error, initialize a git repo like this
 git init
 ```
 
-### Prepare PostgreSQL
+## Prepare PostgreSQL
 
 ```shell
 sudo -u postgres psql
@@ -82,20 +80,20 @@ GRANT ALL PRIVILEGES ON DATABASE libratop TO libratopuser;
 
 ```
 
-### Create virtual env and activate it
+## Create virtual env and activate it
 
 ```shell
 py -m venv .venv
 source .venv/bin/activate
 ```
 
-### Install django and pg driver
+## Install django and pg driver
 
 ```shell
 py -m pip install django psycopg2-binary
 ```
 
-### Build django skeleton
+## Build django skeleton
 
 Below, "core" means the core of our app, "." means build skeleton inside the current folder :
 
@@ -126,7 +124,7 @@ DATABASES = {
 }
 ```
 
-### Initial migrations
+## Initial migrations
 
 Django comes with default tables (to manage users and authorizations notably), so let's inject them into our new db :
 
@@ -143,7 +141,7 @@ Create a super user, just enter the following command and enter some realistic v
 py manage.py createsuperuser
 ```
 
-### Run local server
+## Run local server
 
 ```shell
 py manage.py runserver
@@ -151,7 +149,7 @@ py manage.py runserver
 
 Now open your browser at localhost:8000/admin and log in with the credentials of the super user you just created.
 
-### Clean & commit
+## Clean & commit
 
 If everything is working well, you can commit changes
 
