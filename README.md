@@ -140,7 +140,7 @@ py manage.py migrate
 Create a super user, just enter the following command and enter some realistic values when asked :
 
 ```shell
-py myproject/manage.py createsuperuser
+py manage.py createsuperuser
 ```
 
 ### Run local server
