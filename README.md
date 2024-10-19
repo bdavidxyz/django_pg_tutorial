@@ -1,4 +1,4 @@
-# Simplest possible local Django app PostGre
+# Simplest possible local Django app with PostGre
 
 In this tutorial, "libratop" is the commercial name of the product we want to build. It is an online library, so it will manage books.
 
